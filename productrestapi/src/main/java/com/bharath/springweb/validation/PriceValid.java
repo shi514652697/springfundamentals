@@ -14,6 +14,7 @@ import javax.validation.Payload;
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 public @interface PriceValid {
+	
 	String message() default "Price can not be greater less than 10";
     Class<?>[] groups() default {};
     Class<? extends Payload>[] payload() default {};

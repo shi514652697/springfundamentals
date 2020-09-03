@@ -7,7 +7,7 @@ public class PriceValidation implements ConstraintValidator<PriceValid, Integer>
 
 	@Override
 	public boolean isValid(Integer price, ConstraintValidatorContext arg1) {
-		arg1.disableDefaultConstraintViolation();
+		//arg1.disableDefaultConstraintViolation();
 		if(price > 10)
 		{
 			
@@ -15,7 +15,7 @@ public class PriceValidation implements ConstraintValidator<PriceValid, Integer>
 		}
 		else 
 			{
-			arg1.buildConstraintViolationWithTemplate("Price is Less than10").addConstraintViolation();
+			//arg1.buildConstraintViolationWithTemplate("Price is Less than10").addConstraintViolation();
 			return false;
 			}
 			
